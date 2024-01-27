@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Los Pollos Hermanos</title>
+    <link rel="icon" href="../Images/Los_Pollos_Hermanos_logo.png" type="image/x-icon" />
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <link href="../Content/style.css" rel="stylesheet" />
+</head>
+
+<body class="img js-fullheight vsc-initialized" style='background-image: url("../Images/242731706_629385025114450_882571064577353266_n.jpg"); height: 1055px;'>
+
+    <div id="bgg">
+
+        <form class="container bg-white text-black rounded position-absolute top-50 start-50 translate-middle ">
+
+            <div class="mb-3">
+                <h2 class="text-center m-5">Sign In With </h2>
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Agree to the <a class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#">Terms and Conditions</a></label>
+            </div>
+
+            <div class="mb-3 form-check" id="signInButtonContainer" style="display: none;">
+                <button type="submit" class="btn btn-primary position-relative" id="signInButton">Sign In</button>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="../Scripts/bootstrap.js"></script>
+    <script>
+        document.getElementById('exampleCheck1').addEventListener('change', function () {
+            var signInButtonContainer = document.getElementById('signInButtonContainer');
+            var signInButton = document.getElementById('signInButton');
+
+            if (this.checked) {
+                signInButtonContainer.style.display = 'block';
+            } else {
+                signInButtonContainer.style.display = 'none';
+            }
+        });
+
+        document.getElementById('exampleInputEmail1').addEventListener('input', function () {
+            var inputValue = this.value.toLowerCase();
+
+            // Check if the input contains the word "mike"
+            if (inputValue.includes('mike')) {
+                document.body.style.backgroundImage = 'url("../Images/Mike_Los_Pollos_Truck.png")';
+            } else {
+                // Reset to the original background image
+                document.body.style.backgroundImage = 'url("../Images/242731706_629385025114450_882571064577353266_n.jpg")';
+            }
+        });
+    </script>
+</body>
+</html>
