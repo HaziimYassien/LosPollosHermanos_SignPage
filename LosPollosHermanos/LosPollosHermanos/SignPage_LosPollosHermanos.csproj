@@ -86,8 +86,13 @@
     <Content Include="Content\style.css" />
     <Content Include="Images\242731706_629385025114450_882571064577353266_n.jpg" />
     <Content Include="Images\70338840_111590710227220_7028012190837768192_n.png" />
+    <Content Include="Images\a catious man 2.jpg" />
+    <Content Include="Images\a catious man 3.gif" />
+    <Content Include="Images\a catious man.gif" />
+    <Content Include="Images\gusFringFace.jpeg" />
     <Content Include="Images\jonathan-banks-breaking-bad_56758011-3600x2392.png" />
     <Content Include="Images\Los_Pollos_Hermanos_logo.png" />
+    <Content Include="Images\Los_Pollos_Hermanos_logo_BW.png" />
     <Content Include="Images\Mike_Los_Pollos_Truck.png" />
     <Content Include="Pages\SignPage.html" />
     <Content Include="Scripts\bootstrap.bundle.js" />
