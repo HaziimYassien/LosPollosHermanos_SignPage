@@ -8,16 +8,11 @@
         signInButtonContainer.style.display = 'none';
     }
 });
-
-var former = document.getElementsByClassName("former")
-former.style.backgroundColor = 'rgba(255, 0, 0, 0.5)';
 document.getElementById('exampleInputEmail1').addEventListener('input', function () {
     var inputValue = this.value.toLowerCase();
-
     // Check if the input contains the word "mike"
     if (inputValue.includes('half measures')) {
         document.body.style.backgroundImage = 'url("../Images/Mike_Los_Pollos_Truck.png")';
-        former.style.backgroundImage = 'url("../Images/Mike_Los_Pollos_Truck.png")';
     }
 
     else if (inputValue.includes('a cautious man')) {
